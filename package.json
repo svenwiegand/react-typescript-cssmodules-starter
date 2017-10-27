@@ -9,7 +9,8 @@
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
     "redux": "^3.7.2",
-    "typed-intl": "^1.0.0"
+    "typed-intl": "^1.0.0",
+    "typed-redux-actions": "^1.1.0"
   },
   "scripts": {
     "css-types": "tcm -p src/**/*.css -c -o generated",
@@ -96,7 +97,9 @@
       "^.+\\.(css|scss)$": "identity-obj-proxy",
       "^.+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/config/jest/fileMock.js"
     },
-    "setupFiles": ["<rootDir>/config/jest/setupTests.js"],
+    "setupFiles": [
+      "<rootDir>/config/jest/setupTests.js"
+    ],
     "globals": {
       "ts-jest": {
         "tsConfigFile": "./tsconfig.test.json"

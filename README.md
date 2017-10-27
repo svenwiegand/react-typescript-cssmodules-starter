@@ -2,7 +2,7 @@
 Minimal starter kit with hot module replacement (HMR) for rapid development and [CSS Modules](https://github.com/css-modules/css-modules). Bbased on [Viktor Persson's react-webpack-typescript-starter](https://github.com/vikpe/react-webpack-typescript-starter).
 
 * **[React](https://facebook.github.io/react/)** (16.x) with
-   * [React Router](https://reacttraining.com/react-router/web) 
+   * [React Router](https://reacttraining.com/react-router/web)
    * [Redux](http://redux.js.org/)
 * **[Webpack](https://webpack.js.org/)** (3.x)
 * **[Typescript](https://www.typescriptlang.org/)** (2.x)
@@ -10,6 +10,7 @@ Minimal starter kit with hot module replacement (HMR) for rapid development and 
 * **[CSS Modules](https://github.com/css-modules/css-modules)** and **[cssnext](http://cssnext.io/)**
 * [Babel](http://babeljs.io/) (6.x)
 * [typed-intl](https://github.com/svenwiegand/typed-intl) for TypeScript friendly internationalization
+* [typed-redux-actions](https://github.com/svenwiegand/typed-redux-actions) to avoid poilerplate when defining Redux actions
 * [immutable](https://facebook.github.io/immutable-js/)
 * [Jest](https://facebook.github.io/jest/) - Testing framework for React applications with [Enzyme](https://github.com/airbnb/enzyme)
 * Support for absolute import paths so that you can use `import ... from 'common/MyClass'` instead of relative `../../common/MyClass`.
@@ -17,7 +18,7 @@ Minimal starter kit with hot module replacement (HMR) for rapid development and 
 * Image loading/minification using [Image Webpack Loader](https://github.com/tcoopman/image-webpack-loader)
 * Typescript compiling using [Awesome Typescript Loader](https://github.com/s-panferov/awesome-typescript-loader) (3.x)
 * Code quality (linting) for Typescript.
-  
+
 ## Installation
 1. Clone/download repo
 2. `npm install` (I prefer [yarn](https://yarnpkg.com/lang/en/) which works fine as well)
@@ -28,7 +29,7 @@ Minimal starter kit with hot module replacement (HMR) for rapid development and 
 `npm start`
 
 * Build app continously (HMR enabled)
-* App served @ `http://localhost:3000` 
+* App served @ `http://localhost:3000`
 
 **Production**
 
@@ -46,7 +47,7 @@ Command | Description
 `npm run start` | Alias for `npm run start-dev`
 `npm run start-dev` | Build app continuously (HMR enabled) and serve @ `http://localhost:3000`
 `npm run start-prod` | Build app once (HMR disabled) and serve @ `http://localhost:3000`
-`npm run build` | Build app to `/dist` 
+`npm run build` | Build app to `/dist`
 `npm run test` | Run tests continuously watching for changes
 `npm run test-coverage` | Run tests once with coverage
 `npm run lint` | Run TypeScript linter

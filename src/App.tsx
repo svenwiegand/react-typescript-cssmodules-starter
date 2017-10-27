@@ -1,10 +1,10 @@
 import * as React from 'react';
 import * as style from './App.css';
 import msgs from './App.msg';
-import Hello from './hello/Hello';
-import store from './AppStore';
 import * as AppState from './AppState';
-import { createDecreaseEnthusiasm, createIncreaseEnthusiasm } from './AppState';
+import store from './AppStore';
+import Hello from './hello/Hello';
+import * as Action from './AppAction';
 
 const logo = require('./logo.svg');
 const msg = msgs.messages();
@@ -46,10 +46,10 @@ export default class App extends React.PureComponent<{}, AppState.State> {
     }
 
     private increaseEnthusiasm = () => {
-        store.dispatch(createIncreaseEnthusiasm())
+        store.dispatch(Action.increaseEnthusiasm(1))
     };
 
     private decreaseEnthusiasm = () => {
-        store.dispatch(createDecreaseEnthusiasm())
+        store.dispatch(Action.decreaseEnthusiasm(1))
     };
 }

@@ -97,7 +97,6 @@ module.exports = {
         minChunks: isExternalModule
     }),
       new webpack.WatchIgnorePlugin([
-          /css\.d\.ts$/
       ])
   ],
   performance: {
